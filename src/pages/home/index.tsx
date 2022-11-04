@@ -16,7 +16,7 @@ const home = () => {
     {/* Faq */}
     <SplitWithImage />
     {/* Footer */}
-
+    <SmallWithLogoLeft />
     </>
   )
 }
