@@ -1,5 +1,4 @@
 import React from 'react'
-import Faq from '../../components/Faq/Faq'
 
 import Features from '../../components/Feature/Feature'
 import SmallWithLogoLeft from '../../components/Footer/Footer'
@@ -19,7 +18,7 @@ const home = () => {
       <Features />
 
       {/* FAQ */ }
-      <Faq />
+      
 
       {/* Footer */ }
       <SmallWithLogoLeft />
