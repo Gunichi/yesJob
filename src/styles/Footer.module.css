@@ -1,0 +1,29 @@
+.footer {
+  height: 143px;
+  left: 19px;
+  top: 1926px;
+  background: #FFF;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footerLogo {
+  width: 232px;
+  height: 98px;
+  left: 96px;
+  top: 1975px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 98px;
+  color: #040164;
+}
+
+.footerLogoInstagram {
+  left: 57.25%;
+right: 38.31%;
+top: 92.63%;
+bottom: 4.48%;
+}
