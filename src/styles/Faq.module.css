@@ -3,8 +3,6 @@
 .faqTitle {
   width: 76px;
   height: 53px;
-  left: 98px;
-  top: 1443px;
   font-family: 'Lora';
   font-style: normal;
   font-weight: 700;
@@ -17,8 +15,7 @@
 .faqDescription {
   width: 378px;
   height: 33px;
-  left: 98px;
-  top: 1503px;
+
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 500;
@@ -26,3 +23,5 @@
   line-height: 33px;
   color: #403C55;
 }
+
+

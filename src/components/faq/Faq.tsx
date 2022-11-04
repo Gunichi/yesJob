@@ -1,96 +1,94 @@
-import {
-  Container,
-  SimpleGrid,
-  Image,
-  Flex,
-  Heading,
-  Text,
-  Stack,
-  StackDivider,
-  Icon,
-  useColorModeValue,
-  Box,
-} from '@chakra-ui/react';
-import {
-  IoAnalyticsSharp,
-  IoLogoBitcoin,
-  IoSearchSharp,
-} from 'react-icons/io5';
-import { ReactElement } from 'react';
+import * as React from 'react';
+
+import { Box, Text, Button, Flex, HStack, Image, SimpleGrid, Container, chakra } from '@chakra-ui/react';
 
 import style from '../../styles/Faq.module.css';
 
-interface FeatureProps {
-  text: string;
-  iconBg: string;
-  icon?: ReactElement;
-}
-
-const Feature = ({ text, icon, iconBg }: FeatureProps) => {
+const Faq = () => {
   return (
-    <Stack direction={'row'} align={'center'}>
-      <Flex
-        w={8}
-        h={8}
-        align={'center'}
-        justify={'center'}
-        rounded={'full'}
-        bg={iconBg}>
-        {icon}
-      </Flex>
-      <Text fontWeight={600}>{text}</Text>
-    </Stack>
+    <Flex
+      bg=""
+      p={20}
+      w="full"
+      justifyContent="center"
+      alignItems="center"
+    >
+      <Box
+        bg="white"
+        px={8}
+        py={20}
+        mx="auto"
+      >
+        <SimpleGrid
+          alignItems="start"
+          columns={{
+            base: 1,
+            md: 2,
+          }}
+          mb={24}
+          spacingY={{
+            base: 10,
+            md: 32,
+          }}
+          spacingX={{
+            base: 10,
+            md: 24,
+          }}
+        >
+          <Box>
+            <chakra.h2
+              className={style.faqTitle}
+            >
+              FAQ
+            </chakra.h2>
+            <chakra.p
+              mb={5}
+              textAlign={{
+                base: "center",
+                sm: "left",
+              }}
+              color="gray.600"
+              _dark={{
+                color: "gray.400",
+              }}
+              fontSize={{
+                md: "lg",
+              }}
+            >
+              Dúvidas frequentes sobre o yesJob 
+            </chakra.p>
+            <Button
+              w={{
+                base: "full",
+                sm: "auto",
+              }}
+              size="lg"
+              bg="gray.900"
+              _dark={{
+                bg: "gray.700",
+              }}
+              _hover={{
+                bg: "gray.700",
+                _dark: {
+                  bg: "gray.600",
+                },
+              }}
+              color="gray.100"
+              as="a"
+            >
+              Learn More
+            </Button>
+          </Box>
+          
+            <Image
+              src="https://i.imgur.com/hVq7YgI.png"
+              alt="Faq"
+              w={{ base: "full", md: "lg" }}
+            />
+        </SimpleGrid>
+      </Box>
+    </Flex>
   );
 };
 
-export default function SplitWithImage() {
-  return (
-    <Box maxW={'100%'} maxH={'526px'} py={12}>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-        <Stack spacing={4} ml={'97px'}>
-          <Text className={style.faqTitle}>FAQ</Text>
-          <Text className={style.faqDescription}>
-            Dúvidas frequentes sobre o yesJob 
-          </Text>
-          <Stack
-            spacing={4}
-            divider={
-              <StackDivider
-                borderColor={useColorModeValue('gray.100', 'gray.700')}
-              />
-            }>
-            <Feature
-              icon={
-                <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
-              }
-              iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-              text={'Business Planning'}
-            />
-            <Feature
-              icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
-              iconBg={useColorModeValue('green.100', 'green.900')}
-              text={'Financial Planning'}
-            />
-            <Feature
-              icon={
-                <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
-              }
-              iconBg={useColorModeValue('purple.100', 'purple.900')}
-              text={'Market Analysis'}
-            />
-          </Stack>
-        </Stack>
-        <Flex>
-          <Image
-            rounded={'md'}
-            alt={'feature image'}
-            src={
-              'https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-            }
-            objectFit={'cover'}
-          />
-        </Flex>
-      </SimpleGrid>
-    </Box>
-  );
-}
+export default Faq;
