@@ -4,7 +4,7 @@ import FaqScreen from '../../components/faq/Faq'
 
 import Features from '../../components/Feature/Feature'
 
-import SmallWithLogoLeft from '../../components/Footer/Footer'
+import SmallWithLogoLeft from '../../components/footer/Footer'
 
 import Header from '../../components/Header/Header'
 
