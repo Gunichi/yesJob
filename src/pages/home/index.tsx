@@ -6,7 +6,8 @@ import Features from '../../components/Feature/Feature'
 
 import SmallWithLogoLeft from '../../components/footer/footer'
 
-import Header from '../../components/header/header'
+import Header from '../../components/Header/Header'
+
 
 import WithSubnavigation from '../../components/Navbar/Navbar'
 
@@ -27,7 +28,6 @@ const home = () => {
 
       {/* Footer */ }
       <SmallWithLogoLeft />
-
     </>
   )
 }
