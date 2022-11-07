@@ -36,11 +36,11 @@ const FaqScreen = () => {
           }}
         >
           <Box>
-            <chakra.h2
+            <chakra.h1
               className={style.faqTitle}
             >
               FAQ
-            </chakra.h2>
+            </chakra.h1>
             <chakra.p
               mb={5}
               textAlign={{

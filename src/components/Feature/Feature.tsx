@@ -57,7 +57,7 @@ const Feature = () => {
               <Text className={style.boxFirst}>
                 3º
               </Text>
-              <Box ml={17} className={style.boxThree}>
+              <Box ml={17} height="auto" className={style.boxOne}>
                 <Box>
                   <Text className={style.boxTextDescriptionThree} >
                     Quando for selecionado, apresente quem você é pra que seja encaminhado para vaga que mais se encaixa com seu perfil e propósito.
