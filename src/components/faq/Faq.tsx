@@ -1,8 +1,10 @@
 import * as React from 'react';
 
-import { Box, Text, Button, Flex, HStack, Image, SimpleGrid, Container, chakra } from '@chakra-ui/react';
+import { Box, Text, Button, Flex, HStack, Image, SimpleGrid, Container, chakra, InputGroup, InputLeftElement, InputRightElement, Input } from '@chakra-ui/react';
 
 import style from '../../styles/Faq.module.css';
+import { FaSearch } from 'react-icons/fa';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 const FaqScreen = () => {
   return (
@@ -57,27 +59,31 @@ const FaqScreen = () => {
             >
               Dúvidas frequentes sobre o yesJob 
             </chakra.p>
-            <Button
-              w={{
-                base: "full",
-                sm: "auto",
-              }}
-              size="lg"
-              bg="gray.900"
-              _dark={{
-                bg: "gray.700",
-              }}
-              _hover={{
-                bg: "gray.700",
-                _dark: {
-                  bg: "gray.600",
-                },
-              }}
-              color="gray.100"
-              as="a"
-            >
-              Learn More
-            </Button>
+            <InputGroup>
+              <InputLeftElement
+                pointerEvents='none'
+                color='#FFF'
+                fontSize='1.2em'
+                children={<FaSearch />}
+              />
+              <Input 
+                textAlign='center'
+                color='#403C55'
+                placeholder='Como recuperar meu acesso?' 
+                borderRadius={19}
+                backgroundColor={'#D7D5D5'}
+
+              />
+              <InputRightElement children={<ArrowForwardIcon color='#670A8E' />} />
+            </InputGroup>
+            <Box bg='#EEEDED' borderRadius={16} > 
+            <Flex mt="6" align="center">
+              <FaSearch />
+              <Text ml='10'> Como cadastrar meu currículo gratuitamente?</Text> <ArrowForwardIcon ml='10' color='#670A8E' />
+            </Flex>
+
+
+            </Box>
           </Box>
           
             <Image

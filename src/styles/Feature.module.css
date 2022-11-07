@@ -75,3 +75,37 @@
   order: 0;
   flex-grow: 0;
 }
+
+.featureTitle {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 133%;
+  /* or 53px */
+
+  letter-spacing: -0.02em;
+
+  color: #9400D3;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.featureSubtitle {
+  /* Subtitle */
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 33px;
+color: #555564;
+flex: none;
+order: 1;
+flex-grow: 0;
+}

@@ -8,15 +8,14 @@ const Feature = () => {
     <Box as="section" bg="gray.50" py="20">
       <Container maxW="container.xl">
         <Text
-          as="h2"
-          fontSize="4xl"
-          fontWeight="bold"
-          textAlign="center"
-          color="#9400D3"
-          mb="10"
+          className={style.featureTitle}
         >
           3 Sugestões para que seu perfil seja  mais atrativo para as empresas
-        </Text>       
+          <br />
+        </Text>   
+        <Text className={style.featureSubtitle}>
+          e <b>aumentar</b> suas possibilidades de <b>contratação</b>
+        </Text>     
   
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing="14">
           <Box>
