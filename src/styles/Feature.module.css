@@ -1,4 +1,4 @@
-.box {
+.boxOne {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -13,32 +13,7 @@
   flex-grow: 0;
 }
 
-.box2 {
-  width: 285px;
-  height: 86px;
-  background: #670A8E;
-  border-radius: 7px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.box3 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px;
-  gap: 10px;
-  width: 370px;
-  height: 86px;
-  background: #670A8E;
-  border-radius: 7px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.boxNumber {
+.boxFirst {
   width: 39px;
   height: 55px;
   font-family: 'Nunito';
@@ -69,32 +44,31 @@
   flex-grow: 0;
 }
 
-.boxTextDescription2 {
-  width: 265px;
-  height: 66px;
-  left: 10px;
-  top: 10px;
-  
-  /* Bold */
-  
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  
-  color: #FFFFFF;
+
+.boxThree {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  width: 370px;
+  height: 86px;
+
+  background: #670A8E;
+  border-radius: 7px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.boxTextDescription3 {
-  width: 350px;
-  height: 66px;  
+.boxTextDescriptionThree {
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 22px;
   text-align: center;
   color: #FFFFFF;
   flex: none;
