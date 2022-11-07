@@ -1,6 +1,6 @@
 import React from 'react'
 
-import FaqScreen from '../../components/Faq/Faq'
+import FaqScreen from '../../components/faq/Faq'
 
 import Features from '../../components/Feature/Feature'
 
