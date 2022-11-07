@@ -12,7 +12,7 @@ const Header = () => {
         base: 1,
         md: 2,
       }}
-      bgGradient="linear(to-r, #9400D3, #040164)"
+      bgGradient="linear(to-r, #040164, #5FCA0C)"
       spacing={0}
     >
       <Flex bg="brand.400">

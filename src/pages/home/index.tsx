@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react'
 import React from 'react'
 
 import FaqScreen from '../../components/faq/Faq'
@@ -8,8 +9,9 @@ import SmallWithLogoLeft from '../../components/footer/footer'
 
 import Header from '../../components/Header/Header'
 
-
 import WithSubnavigation from '../../components/Navbar/Navbar'
+
+import style from '../../styles/Index.module.css'
 
 const home = () => {
 

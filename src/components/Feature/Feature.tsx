@@ -5,7 +5,7 @@ import { Box, Text, Button, Flex, HStack, Image, SimpleGrid, Container, chakra, 
 
 const Feature = () => {
   return (
-    <Box as="section" bg="gray.50" py="20">
+    <Box as="section" py="20">
       <Container maxW="container.xl">
         <Text
           className={style.featureTitle}
@@ -17,14 +17,14 @@ const Feature = () => {
           e <b>aumentar</b> suas possibilidades de <b>contratação</b>
         </Text>     
   
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing="14">
+        <SimpleGrid mt={20} columns={{ base: 1, md: 3 }} spacing="14">
           <Box>
             <Image src="https://i.imgur.com/xfZbcok.png" alt="feature-1" />
             <Flex mt="6" align="center">
-              <Text className={style.boxFirst}>
+              <Text className={style.boxFirst} display='inline'>
                 1º
               </Text>
-              <Box ml={17} className={style.boxOne}>
+              <Box ml={17} height="auto" className={style.boxOne}>
                 <Box>
                   <Text className={style.boxTextDescription1} >
                     Tenha seus documentos em mãos e cadastre-se com calma, preenchendo todos os campos solicitados. 
@@ -40,7 +40,7 @@ const Feature = () => {
               <Text className={style.boxFirst}>
                 2º
               </Text>
-              <Box ml={17} className={style.boxOne}>
+              <Box ml={17} height="auto" width='auto' className={style.boxOne}>
                 <Box>
                   <Text className={style.boxTextDescription1} >
                     Invista tempo para descrever as atividades que reflita as habilidades aprendidas até ali 
