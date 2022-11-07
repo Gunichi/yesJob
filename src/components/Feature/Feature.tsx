@@ -5,22 +5,26 @@ import { Box, Text, Button, Flex, HStack, Image, SimpleGrid, Container, chakra, 
 
 const Feature = () => {
   return (
-    <Box as="section" py="20">
+    <Box as="section" py="10">
       <Container maxW="container.xl">
         <Text
+          fontSize={{ base: '30px', md: '35px', lg: '40px' }}
           className={style.featureTitle}
         >
           3 Sugestões para que seu perfil seja  mais atrativo para as empresas
           <br />
         </Text>   
-        <Text className={style.featureSubtitle}>
+        <Text 
+          className={style.featureSubtitle}
+          fontSize={{ base: '20px', md: '20px', lg: '24px' }}
+        >
           e <b>aumentar</b> suas possibilidades de <b>contratação</b>
         </Text>     
   
-        <SimpleGrid mt={20} columns={{ base: 1, md: 3 }} spacing="14">
-          <Box>
+        <SimpleGrid mt={20} columns={[1, null, 3]} spacing="14">
+          <Box w={[300, 400, 500]} justifyContent={'center'} alignContent="center">
             <Image src="https://i.imgur.com/xfZbcok.png" alt="feature-1" />
-            <Flex mt="6" align="center">
+            <Flex mt="6" >
               <Text className={style.boxFirst} display='inline'>
                 1º
               </Text>
@@ -34,7 +38,7 @@ const Feature = () => {
             </Flex>
           </Box>
 
-          <Box>
+          <Box w={[300, 400, 500]} justifyContent={'center'} alignContent="center">
             <Image src="https://i.imgur.com/xfZbcok.png" alt="feature-1" />
             <Flex mt="6" align="center">
               <Text className={style.boxFirst}>
@@ -50,7 +54,7 @@ const Feature = () => {
             </Flex>
           </Box>
 
-          <Box>
+          <Box w={[300, 400, 500]} justifyContent={'center'} alignContent="center">
             <Image src="https://i.imgur.com/xfZbcok.png" alt="feature-1" />
             <Flex mt="6" align="center">
               <Text className={style.boxFirst}>
