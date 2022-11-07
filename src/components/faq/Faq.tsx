@@ -4,7 +4,7 @@ import { Box, Text, Button, Flex, HStack, Image, SimpleGrid, Container, chakra }
 
 import style from '../../styles/Faq.module.css';
 
-const Faq = () => {
+const FaqScreen = () => {
   return (
     <Flex
       bg=""
@@ -91,4 +91,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default FaqScreen;
